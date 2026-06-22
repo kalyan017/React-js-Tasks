@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <h1>SELF INTRODUCTION</h1>
-      <Selfintro/>
+      <Selfintro />
     </div>
   )
 }
