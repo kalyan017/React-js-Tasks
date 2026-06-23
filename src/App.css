@@ -1,4 +1,6 @@
-div>#heading1 {
+/* Task-1: */
+
+/* div>h1 {
     text-align: center;
     color: red;
     text-decoration: underline;
@@ -8,4 +10,45 @@ div>#heading1 {
 p {
     font-size: 20px;
     padding-bottom: 10px;
+} */
+
+
+
+/* Task-2: */
+
+
+div>#heading1 {
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    border: none;
+    background-color: wheat;
+    margin: auto;
+    font-size: 30px;
+    
+}
+
+h2{
+    font-size: 30px;
+    color: brown;
+    text-decoration: underline black;
+}
+
+div>h1{
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+
+#maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 10px;
+
 }
