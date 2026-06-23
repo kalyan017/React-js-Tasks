@@ -1,12 +1,12 @@
 import React from 'react'
 import "./App.css"
-import Selfintro from './Selfintro'
+import child from './child'
 
 export default function App() {
   return (
     <div>
-      <h1>SELF INTRODUCTION</h1>
-      <Selfintro />
+      <h1>Task-2</h1>
+      <child/>
     </div>
   )
 }
