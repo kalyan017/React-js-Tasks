@@ -38,11 +38,22 @@ export default function ListRendering() {
             salary: 32000
         }
     ];
+
     return (
-        <div id="List">
-            {employees.length>0?employees.map((emp)=>(
-                <h1 key={emp.id}>{`id: ${emp.id}  Name: ${emp.name} City: ${emp.city} Salary: ${emp.salary}`}</h1>
-            )):<h1>No Data Found</h1> }
+        <div id="list">
+            {employees.length > 0 ? (
+                employees.map((emp) => (
+                    <div className="card" key={emp.id}>
+                        <h2>{emp.name}</h2>
+                        <p><strong>ID:</strong> {emp.id}</p>
+                        <p><strong>Age:</strong> {emp.age}</p>
+                        <p><strong>City:</strong> {emp.city}</p>
+                        <p><strong>Salary:</strong> ₹{emp.salary}</p>
+                    </div>
+                ))
+            ) : (
+                <h1>No Data Found</h1>
+            )}
         </div>
-    )
+    );
 }

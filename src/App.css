@@ -55,7 +55,7 @@ div>h1{
 
 
 /* Task:3 */
-
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -99,7 +99,7 @@ div>h1{
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .card {
         padding: 20px;
     }
@@ -111,9 +111,52 @@ div>h1{
     .card p {
         font-size: 16px;
     }
+} */ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+#list {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-#List{
-  border: 2px solid;
+.card {
+     width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: brown;
+    color: beige;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }
