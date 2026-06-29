@@ -112,7 +112,7 @@ div>h1{
         font-size: 16px;
     }
 } */ */
-
+/* 
 * {
     margin: 0;
     padding: 0;
@@ -155,8 +155,8 @@ div>h1{
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .card {
         width: 100%;
     }
-}
+} */
