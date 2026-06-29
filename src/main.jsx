@@ -9,6 +9,6 @@ import ListRendering from './Task-3/ListRendering.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ListRendering />
+    
   </StrictMode>
 )
