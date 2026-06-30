@@ -7,9 +7,10 @@ import CoonditionalRendering from './Task-3/ConditionalRendering.jsx'
 import ConditionalRendering from './Task-3/ConditionalRendering.jsx'
 import ListRendering from './Task-3/ListRendering.jsx'
 import UseStateHook from './Task-4/UseStateHook.jsx'
+import RegistrationForm from './Task-5/RegistrationForm.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UseStateHook/>
+    <RegistrationForm/>
   </StrictMode>
 )
