@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './RegistraionForm.css'
 
 export default function RegistrationForm() {
     const [form, setForm] = useState({
