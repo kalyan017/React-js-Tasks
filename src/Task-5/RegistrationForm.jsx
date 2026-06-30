@@ -51,6 +51,7 @@ export default function RegistrationForm() {
         return;
     }
 setError("");
+alert("Form Submitted Successfully");
 console.log(form);
 
     }
