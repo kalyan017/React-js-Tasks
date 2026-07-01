@@ -11,6 +11,6 @@ import RegistrationForm from './Task-5/RegistrationForm.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RegistrationForm/>
+    
   </StrictMode>
 )
