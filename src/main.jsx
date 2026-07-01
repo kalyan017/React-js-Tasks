@@ -8,9 +8,10 @@ import ConditionalRendering from './Task-3/ConditionalRendering.jsx'
 import ListRendering from './Task-3/ListRendering.jsx'
 import UseStateHook from './Task-4/UseStateHook.jsx'
 import RegistrationForm from './Task-5/RegistrationForm.jsx'
+import Api from './Task-6/Api.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
+    <Api />
   </StrictMode>
 )
