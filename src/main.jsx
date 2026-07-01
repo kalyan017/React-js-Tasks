@@ -11,7 +11,7 @@ import RegistrationForm from './Task-5/RegistrationForm.jsx'
 import Api from './Task-6/Api.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
     <Api />
-  </StrictMode>
+  
 )
