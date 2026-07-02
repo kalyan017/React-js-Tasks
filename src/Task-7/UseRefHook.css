@@ -1,11 +1,114 @@
-.org-img{
-    height: 300px;
-    width: 300px;
-    border: 2px solid;
-    cursor: pointer;
-    margin: 20px auto;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2{
-    text-align: center;
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:repeating-linear-gradient(135deg,#0f172a,#1e3a8a,#3b82f6,white);
+}
+
+.maindiv{
+    width:380px;
+    background:#2c17a4;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    text-align:center;
+}
+
+.maindiv h2{
+    color:#fafcff;
+    margin-bottom:30px;
+    letter-spacing:.5px;
+    font-size: 40px;
+}
+
+.org-img{
+    width:220px;
+    height:220px;
+    margin:auto;
+    border:3px double #000000;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    color:rgb(99, 60, 60);
+    font-weight:600;
+    background:#fdfdfe;
+    transition:.3s;
+    padding:20px;
+    text-align:center;
+}
+
+.org-img:hover{
+    transform:scale(1.03);
+    background:#dbeafe;
+    border-color:#2563eb;
+}
+
+.Updated-img{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.img1{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #3b82f6;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(59,130,246,.35);
+}
+
+.img1:hover{
+    transform:scale(1.05);
+    border-color:#2563eb;
+}
+
+button{
+    padding:12px 35px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(to right,#2563eb,#3b82f6);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 18px rgba(37,99,235,.35);
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 22px rgba(37,99,235,.45);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+@media(max-width:450px){
+
+    .maindiv{
+        width:92%;
+        padding:25px;
+    }
+
+    .img1,
+    .org-img{
+        width:180px;
+        height:180px;
+    }
+
 }
