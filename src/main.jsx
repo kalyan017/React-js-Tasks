@@ -11,9 +11,10 @@ import RegistrationForm from './Task-5/RegistrationForm.jsx'
 import Api from './Task-6/Api.jsx'
 import UseRefHook from './Task-7/UseRefHook.jsx'
 import Application from './Task-8/Application.jsx'
+import UseContextHook from './Task-9/UseContextHook.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-    <Application />
+    < UseContextHook/>
   
 )
