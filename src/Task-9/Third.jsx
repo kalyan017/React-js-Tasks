@@ -1,11 +1,17 @@
-import React from 'react'
-import { Data } from './UseContextHook'
-import { useContext } from 'react'
+import React, { useContext } from "react";
+import { Data } from "./UseContextHook";
+
 export default function Third() {
-    const {theme,setTheme}=useContext(Data);
+  const { theme, setTheme } = useContext(Data);
+
   return (
-    <div>
-      <h2><button onClick={()=>setTheme(theme==="dark"?"light":"dark")}>{theme} Mode</button></h2>
-    </div>
-  )
+    <button
+      className="theme-btn"
+      onClick={() =>
+        setTheme(theme === "dark" ? "light" : "dark")
+      }
+    >
+      {theme === "light" ? "🌙 Dark Mode" : "☀️ Light Mode"}
+    </button>
+  );
 }

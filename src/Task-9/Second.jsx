@@ -12,17 +12,23 @@ const handleform = (e) => {
     [name]:value
   })
 };
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+};
   return (
     <div>
-        <form>
+        <form onSubmit={handleSubmit}>
                 <input type="text" name='Firstname' value={formData.Firstname} placeholder='Enter your first name' onChange={handleform} />
                 <input type="text" name='Lastname' value={formData.Lastname} placeholder='Enter your last name' onChange={handleform} />
                 <input type="email" name='Email' value={formData.Email} placeholder='Enter your email' onChange={handleform} />
-                <input type="tel" name='Mobilenumber' value={formData.Mobilenumber} placeholder='Enter your mobile number' onChange={handleform} />
-                <input type="password" name='password' value={formData.password} placeholder='Enter your password' onChange={handleform} />
+                <input type="tel" name='MobileNumber' value={formData.MobileNumber} placeholder='Enter your mobile number' onChange={handleform} />
+                <input type="password" name='Password' value={formData.Password} placeholder='Enter your password' onChange={handleform} />
                 <input type="password" name='ConfirmPassword' value={formData.ConfirmPassword} placeholder='Confirm your password' onChange={handleform} />
                 <input type="date" name='Dob' value={formData.Dob} onChange={handleform} />
                 <div className="gender">
+                    <label for="">Gender</label>
                     <label>
                         <input
                             type="radio"
@@ -49,15 +55,14 @@ const handleform = (e) => {
                 <br />
                 <select name="City" id="" value={formData.City} onChange={handleform}>
                     <option value="">Select your city</option>
-                    <option value="New York">New york</option>
-                    <option value="Los Angeles">Los Angeles</option>
-                    <option value="Chicago">Chicago</option>
-                    <option value="Houston">Houston</option>
+                    <option value="New York">Ongole</option>
+                    <option value="Los Angeles">Hyderabad</option>
+                    <option value="Chicago">Chennai</option>
+                    <option value="Houston">Banglore</option>
                 </select>
                 <br />
                 <button type='submit' style={{ cursor: 'pointer' }}>Submit</button>
             </form>
-      <Third/>
     </div>
   )
 }

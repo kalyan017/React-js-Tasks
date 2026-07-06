@@ -1,11 +1,196 @@
-.light{
-    background-color: wheat;
-    color: black;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background: #eef2f7;
+    transition: 0.3s;
+}
+
+/* Main Theme Container */
+.light,
+.dark {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
     padding: 30px;
 }
 
-.dark{
-    background-color: black;
+/* Light Theme */
+.light {
+    background: linear-gradient(135deg, #eaf4ff, #ffffff);
+    color: #222;
+}
+
+/* Dark Theme */
+.dark {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     color: white;
+}
+
+/* Form Card */
+form {
+    width: 100%;
+    width: 450px;
+    background: white;
     padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Dark Card */
+.dark form {
+    background: #1f2937;
+    color: white;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 6px rgba(37,99,235,0.4);
+}
+
+/* Dark Inputs */
+.dark input,
+.dark textarea,
+.dark select {
+    background: #374151;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+    color: #ccc;
+}
+
+/* Gender Section */
+.gender {
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+    margin: 8px 0;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Theme Button */
+h2 button {
+    width: 220px;
+    margin: 20px auto;
+    display: block;
+    background: #10b981;
+}
+
+h2 button:hover {
+    background: #059669;
+}
+
+/* Dark Theme Button */
+.dark h2 button {
+    background: #f59e0b;
+    color: black;
+}
+
+.dark h2 button:hover {
+    background: #d97706;
+}
+
+/* Submit Button */
+form button {
+    margin-top: 10px;
+}
+
+.form-container{
+    width:550px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.dark .form-container{
+    background:#1f2937;
+}
+
+.form-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+    gap:20px
+}
+
+.form-header h2{
+    margin:0;
+    font-size:30px;
+}
+
+.theme-btn{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    background:#1d4ed8;
 }
