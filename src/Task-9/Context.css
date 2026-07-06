@@ -1,0 +1,11 @@
+.light{
+    background-color: wheat;
+    color: black;
+    padding: 30px;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
