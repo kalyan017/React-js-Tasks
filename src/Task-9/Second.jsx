@@ -3,42 +3,51 @@ import Third from './Third'
 import { Data } from './UseContextHook'
 
 export default function Second() {
-    const {formData} = useContext(Data)
-    
-    return (
-        <div>
-            <form>
-                <input type="text" name='Firstname' defaultValue={formData.Firstname} placeholder='Enter your First name'/>
-                <input type="text" name='Lastname' defaultValue={formData.Lastname} placeholder='Enter your last name' />
-                <input type="email" name='Email' defaultValue={formData.Email} placeholder='Enter your email' />
-                <input type="tel" name='Mobilenumber' defaultValue={formData.Mobilenumber} placeholder='Enter your mobile number' />
-                <input type="password" name='password' defaultValue={formData.password} placeholder='Enter your password' />
-                <input type="password" name='ConfirmPassword' defaultValue={formData.ConfirmPassword} placeholder='Confirm your password' />
-                <input type="date" name='Dob' defaultValue={formData.Dob} />
+    const { formData, setFormData } = useContext(Data);
+
+const handleform = (e) => {
+  const{name,value}=e.target
+  setFormData({
+    ...formData,
+    [name]:value
+  })
+};
+  return (
+    <div>
+        <form>
+                <input type="text" name='Firstname' value={formData.Firstname} placeholder='Enter your first name' onChange={handleform} />
+                <input type="text" name='Lastname' value={formData.Lastname} placeholder='Enter your last name' onChange={handleform} />
+                <input type="email" name='Email' value={formData.Email} placeholder='Enter your email' onChange={handleform} />
+                <input type="tel" name='Mobilenumber' value={formData.Mobilenumber} placeholder='Enter your mobile number' onChange={handleform} />
+                <input type="password" name='password' value={formData.password} placeholder='Enter your password' onChange={handleform} />
+                <input type="password" name='ConfirmPassword' value={formData.ConfirmPassword} placeholder='Confirm your password' onChange={handleform} />
+                <input type="date" name='Dob' value={formData.Dob} onChange={handleform} />
                 <div className="gender">
                     <label>
                         <input
                             type="radio"
                             name="Gender"
-                            defaultValue="Male"
-                            defaultChecked={formData.Gender === "Male"}
+                            value="Male"
+                            checked={formData.Gender === "Male"}
+                            onChange={handleform}
                         />
                         Male
                     </label>
+
                     <label>
                         <input
                             type="radio"
                             name="Gender"
-                            defaultValue="Female"
-                            defaultChecked={formData.Gender === "Female"}
-
+                            value="Female"
+                            checked={formData.Gender === "Female"}
+                            onChange={handleform}
                         />
                         Female
                     </label>
                 </div>
-                <textarea name="Address" id="" cols="30" rows="10" placeholder='Enter your address' defaultValue={formData.Address} ></textarea>
+                <textarea name="Address" id="" cols="30" rows="10" placeholder='Enter your address' value={formData.Address} onChange={handleform} ></textarea>
                 <br />
-                <select name="City" id="" defaultValue={formData.City}>
+                <select name="City" id="" value={formData.City} onChange={handleform}>
                     <option value="">Select your city</option>
                     <option value="New York">New york</option>
                     <option value="Los Angeles">Los Angeles</option>
@@ -48,7 +57,7 @@ export default function Second() {
                 <br />
                 <button type='submit' style={{ cursor: 'pointer' }}>Submit</button>
             </form>
-            <Third />
-        </div>
-    )
+      <Third/>
+    </div>
+  )
 }
