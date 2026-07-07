@@ -12,7 +12,7 @@ import Api from './Task-6/Api.jsx'
 import UseRefHook from './Task-7/UseRefHook.jsx'
 import Application from './Task-8/Application.jsx'
 import UseContextHook from './Task-9/UseContextHook.jsx'
-import Routing from './Task-10/routing.jsx'
+import Routing from './Task-10/Routing.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
