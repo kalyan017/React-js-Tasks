@@ -14,7 +14,8 @@ export default function Routing() {
             <BrowserRouter>
                 <div className="header">
                     <div> 
-                        <img src={profilePic} alt="Logo"/>
+                        <Link to={"/Profile"}> <img src={profilePic} alt="Logo"/></Link>
+                       
                     </div>
                     <div className='sub-header'>
                         <Link to={"/"} className='nav-link'>Home</Link>
