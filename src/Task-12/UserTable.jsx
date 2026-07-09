@@ -6,11 +6,9 @@ export default function UserTable() {
     const { data: user, error, loading } = useAPI("https://jsonplaceholder.typicode.com/users")
     if (loading) {
         console.log("lodaing.....");
-        
         return (
             <div className="loading-container">
                 <div className="loading">
-                    
                 </div>
             </div>
         );
