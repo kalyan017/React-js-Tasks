@@ -14,10 +14,11 @@ import Application from './Task-8/Application.jsx'
 import UseContextHook from './Task-9/UseContextHook.jsx'
 import Routing from './Task-10/Routing.jsx'
 import UseParamsHook from './Task-11/UseParamsHook.jsx'
+import CustomHook from './Task-12/CustomHook.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UseParamsHook/>
+    <CustomHook/>
   </StrictMode>
    
   
