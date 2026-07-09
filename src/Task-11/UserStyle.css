@@ -1,5 +1,5 @@
 /* ---------- Global ---------- */
-
+/* 
 *{
     margin:0;
     padding:0;
@@ -11,10 +11,10 @@ body{
     background:#f1f5f9;
     color:#1e293b;
 }
-
+ */
 
 /* ---------- User List Page ---------- */
-
+/* 
 .user-list-container{
     width:90%;
     max-width:500px;
@@ -31,11 +31,11 @@ body{
     margin-bottom:30px;
     color:#e40707;
     font-size:32px;
-}
+} */
 
 
 /* List */
-
+/* 
 .user-list{
     list-style-type:none;
 }
@@ -43,11 +43,11 @@ body{
 
 .user-list li{
     margin:15px 0;
-}
+} */
 
 
 /* Link Styling */
-
+/* 
 .user-list li .link{
 
     display:block;
@@ -78,11 +78,11 @@ body{
 
     transform:translateX(10px);
 
-}
+} */
 
 
 /* ---------- User Details Page ---------- */
-
+/* 
 .user-details-container{
 
     width:90%;
@@ -132,11 +132,11 @@ body{
     font-weight:500;
 
 }
-
+ */
 
 
 /* ---------- Loading ---------- */
-.loading-container{
+/* .loading-container{
     height:100vh;
     display:flex;
     justify-content:center;
@@ -178,7 +178,7 @@ height:100px;
 
 /* ---------- Responsive ---------- */
 
-
+/* 
 @media(max-width:600px){
 
     .user-list-container,
@@ -204,4 +204,4 @@ height:100px;
 
     }
 
-}
+} */ 
