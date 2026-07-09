@@ -10,13 +10,12 @@ function useAPI(URL) {
         const fetchAPI = async () => {
             try {
                 const response = await axios.get(URL);
-                setData(response.data)
-
+                setTimeout(() => {
+                    setData(response.data);
+                    setLoading(false);
+                }, 1000);
             } catch (error) {
                 setError(error.message)
-            }
-            finally {
-                setLoading(false)
             }
         }
         fetchAPI()
