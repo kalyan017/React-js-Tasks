@@ -49,34 +49,19 @@ export default function TicTacToe() {
             <div className="board">
                 {
                     board.map((value, index) => (
-
                         <button
                             key={index}
                             onClick={() => handleClick(index)}
                         >
-
                             {value}
-
                         </button>
-
                     ))
                 }
-
-
             </div>
-
-
             {
                 winner &&
                 <h2>{winner} Wins 🎉</h2>
             }
-
-
         </div>
-
     )
-
 }
-
-
-export default TicTacToe;
