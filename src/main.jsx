@@ -15,10 +15,11 @@ import UseContextHook from './Task-9/UseContextHook.jsx'
 import Routing from './Task-10/Routing.jsx'
 import UseParamsHook from './Task-11/UseParamsHook.jsx'
 import CustomHook from './Task-12/CustomHook.jsx'
+import TicTacToe from './Task-13/TicTacToe.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CustomHook/>
+    <TicTacToe/>
   </StrictMode>
    
   
