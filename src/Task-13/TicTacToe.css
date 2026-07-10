@@ -1,27 +1,142 @@
-.game{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
+
+body{
+    background:
+    radial-gradient(circle,#8a1e1e,#021707);
+    height:100vh;
+    font-family:Arial, sans-serif;
+}
+
+
+/* Main container */
+
+.game{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:rgb(252, 251, 251);
+    perspective:1000px;
+}
+
+
+
+.game h1{
+    font-size:50px;
+    margin-bottom:40px;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    text-shadow:
+    0 0 10px cyan,
+    0 0 20px rgb(0, 0, 0);
+    animation:titleGlow 2s infinite alternate;
+}
+
+@keyframes titleGlow{
+
+    from{
+        text-shadow:
+        0 0 10px rgb(12, 226, 226);
+    }
+    to{
+        text-shadow:
+        0 0 30px cyan,
+        0 0 60px rgb(236, 25, 25);
+    }
+}
+
+/* Board 3D */
 
 .board{
-display:grid;
-grid-template-columns:repeat(3,100px);
-gap:5px;
+    display:grid;
+    grid-template-columns:repeat(3,120px);
+    gap:20px;
 }
 
+/* Individual boxes */
 
 .board button{
+    height:120px;
+    width:120px;
+    border:none;
+    border-radius:20px;
+    background:
 
-height:100px;
-width:100px;
+    linear-gradient(
+    145deg,
+    #d56363,
+    #0b3188
+    );
+    color:white;
+    font-size:60px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:
+    10px 10px 20px #000000,
 
-font-size:40px;
-font-weight:bold;
+    -5px -5px 15px #012b3c;
+    transition:transform .3s,
+    box-shadow .3s;
+    transform-style: preserve-3d;
+}
+/* Hover 3D movement */
+.board button:hover{
+    transform:
 
-cursor:pointer;
+    translateZ(40px)
+
+    rotateY(15deg);
+    box-shadow:
+    0 0 30px cyan;
+}
+
+/* X and O animation */
+
+.board button:not(:empty){
+    animation:
+    pop .4s ease;
+}
+
+@keyframes pop{
+
+    0%{
+        transform:
+        scale(0)
+        rotateY(180deg);
+    }
+    100%{
+        transform:
+        scale(1)
+        rotateY(0);
+    }
+}
+
+/* Winner text */
+.game h2{
+    margin-top:40px;
+    font-size:40px;
+    color:#22c55e;
+    animation:
+
+    winner 1s infinite alternate;
+}
+
+@keyframes winner{
+    from{
+
+        transform:scale(1);
+
+    }
+    to{
+
+        transform:scale(1.2);
+
+    }
 
 }
