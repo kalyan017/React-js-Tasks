@@ -17,11 +17,12 @@ import UseParamsHook from './Task-11/UseParamsHook.jsx'
 import CustomHook from './Task-12/CustomHook.jsx'
 import TicTacToe from './Game task/TicTacToe.jsx'
 import UseSearchParam from './Task-13/UseSearchParam.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <UseSearchParam/>
-  </StrictMode>
+  <BrowserRouter>
+  <UseSearchParam/>
+  </BrowserRouter>
    
   
 )
