@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -10,12 +10,12 @@ body{
     radial-gradient(circle,#8a1e1e,#021707);
     height:100vh;
     font-family:Arial, sans-serif;
-}
+} */
 
 
 /* Main container */
 
-.game{
+/* .game{
     height:100vh;
     display:flex;
     flex-direction:column;
@@ -23,9 +23,9 @@ body{
     align-items:center;
     color:rgb(252, 251, 251);
     perspective:1000px;
-}
+} */
 
-
+/* 
 
 .game h1{
     font-size:50px;
@@ -36,8 +36,8 @@ body{
     0 0 10px cyan,
     0 0 20px rgb(0, 0, 0);
     animation:titleGlow 2s infinite alternate;
-}
-
+} */
+/* 
 @keyframes titleGlow{
 
     from{
@@ -49,18 +49,18 @@ body{
         0 0 30px cyan,
         0 0 60px rgb(236, 25, 25);
     }
-}
+} */
 
 /* Board 3D */
 
-.board{
+/* .board{
     display:grid;
     grid-template-columns:repeat(3,120px);
     gap:20px;
-}
+} */
 
 /* Individual boxes */
-
+/* 
 .board button{
     height:120px;
     width:120px;
@@ -84,9 +84,9 @@ body{
     transition:transform .3s,
     box-shadow .3s;
     transform-style: preserve-3d;
-}
+} */
 /* Hover 3D movement */
-.board button:hover{
+/* .board button:hover{
     transform:
 
     translateZ(40px)
@@ -94,10 +94,10 @@ body{
     rotateY(15deg);
     box-shadow:
     0 0 30px cyan;
-}
+} */
 
 /* X and O animation */
-
+/* 
 .board button:not(:empty){
     animation:
     pop .4s ease;
@@ -115,19 +115,19 @@ body{
         scale(1)
         rotateY(0);
     }
-}
+} */
 
 /* Winner text */
-.game h2{
+/* .game h2{
     margin-top:40px;
     font-size:40px;
     color:#22c55e;
     animation:
 
     winner 1s infinite alternate;
-}
+} */
 
-@keyframes winner{
+/* @keyframes winner{
     from{
 
         transform:scale(1);
@@ -139,4 +139,4 @@ body{
 
     }
 
-}
+} */
