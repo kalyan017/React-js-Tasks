@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSearchParams } from 'react-router-dom'
-import './PageInation.css'
+// import './PageInation.css'
 export default function PageInation() {
     const [searchParams, setSearchParams] = useSearchParams()
     const currentPage = Number(searchParams.get("page")) || 1;
