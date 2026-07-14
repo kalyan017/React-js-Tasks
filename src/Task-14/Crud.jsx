@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import './Crud.css'
 export default function Crud() {
 
     const [user, setUser] = useState([]);
@@ -119,11 +119,11 @@ export default function Crud() {
     return (
         <div  className="crud-container" >
 
-            <h2>User CRUD Operations</h2>
+            <h2> CRUD OPERATIONS</h2>
 
             <table
                 border={2}
-                cellPadding={15}
+                cellPadding={1}
                 style={{ borderCollapse: "collapse" }}
             >
 
