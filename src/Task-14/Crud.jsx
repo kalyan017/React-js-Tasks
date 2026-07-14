@@ -43,7 +43,7 @@ export default function Crud() {
 
                     const newUser = {
                         ...data,
-                        id: Date.now()
+                        id: user.length+1
                     };
 
                     setUser([...user, newUser]);
