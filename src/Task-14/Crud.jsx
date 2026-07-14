@@ -117,7 +117,7 @@ export default function Crud() {
 
 
     return (
-        <div>
+        <div  className="crud-container" >
 
             <h2>User CRUD Operations</h2>
 
