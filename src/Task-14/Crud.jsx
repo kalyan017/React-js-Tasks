@@ -60,11 +60,9 @@ export default function Crud() {
         })
             .then((response) => response.json())
             .then(() => {
-
                 setUser((users) => {
                     return users.filter((person) => person.id !== id);
                 });
-
             });
     };
 
