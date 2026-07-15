@@ -79,7 +79,6 @@ export default function Crud() {
 
     // UPDATE - Update User
     const updateValues = () => {
-
         fetch(`https://jsonplaceholder.typicode.com/users/${editId}`, {
             method: "PUT",
             body: JSON.stringify({
@@ -101,7 +100,6 @@ export default function Crud() {
                     );
 
                 });
-
 
                 setName("");
                 setEmail("");
