@@ -22,7 +22,7 @@ h2 {
 
 
 table {
-    background: white;
+    background: rgb(255, 255, 255);
     width: 80%;
     border-radius: 10px;
     overflow: hidden;
@@ -31,14 +31,14 @@ table {
 
 
 thead {
-    background: #eb8525;
+    background: #253feb;
     color: white;
 }
 
 
 th {
     padding: 15px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -88,7 +88,7 @@ button {
 
 /* Update button */
 td button:first-child {
-    background: #16a34a;
+    background: #14d35a;
     color: white;
 }
 
