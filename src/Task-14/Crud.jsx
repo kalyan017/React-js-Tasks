@@ -9,7 +9,6 @@ export default function Crud() {
 
     const [editId, setEditId] = useState(null);
 
-
     // READ - Get Users
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
@@ -45,9 +44,7 @@ export default function Crud() {
                         ...data,
                         id: user.length+1
                     };
-
                     setUser([...user, newUser]);
-
                     setName("");
                     setEmail("");
                 })
