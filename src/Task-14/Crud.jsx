@@ -107,7 +107,6 @@ export default function Crud() {
             });
     };
 
-
     return (
         <div  className="crud-container" >
 
