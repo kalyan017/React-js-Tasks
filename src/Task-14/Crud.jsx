@@ -100,7 +100,6 @@ export default function Crud() {
                     );
 
                 });
-
                 setName("");
                 setEmail("");
                 setEditId(null);
