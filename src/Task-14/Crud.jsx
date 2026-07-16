@@ -110,7 +110,6 @@ export default function Crud() {
     return (
         <div  className="crud-container" >
             <h2> CRUD OPERATIONS</h2>
-
             <table
                 border={2}
                 cellPadding={1}
