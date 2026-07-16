@@ -125,7 +125,6 @@ export default function Crud() {
                     </tr>
                 </thead>
 
-
                 <tbody>
 
                     {
