@@ -115,7 +115,6 @@ export default function Crud() {
                 cellPadding={1}
                 style={{ borderCollapse: "collapse" }}
             >
-
                 <thead>
                     <tr>
                         <th>S.No</th>
