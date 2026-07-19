@@ -17,7 +17,6 @@ export default function UseRefHook() {
             setLikes(0)           
         }
     }
-
     return (
         <div className='maindiv'>
             <h2>Profile Picture</h2>
