@@ -4,7 +4,7 @@ import './UseEffectApi.css'
 export default function UseEffectApi() {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState("");
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const apiUrl = "https://jsonplaceholder.typicode.com/users";
