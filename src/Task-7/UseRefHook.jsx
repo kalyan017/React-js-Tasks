@@ -26,7 +26,6 @@ export default function UseRefHook() {
                 <div className="org-img" onClick={() => imageRef.current.click()}>Upload Profile Picture</div>
                 : 
                 <div className='Updated-img'>
-
                     <img src={imgURL} alt="Profile"  className='img1' onClick={()=>imageRef.current.click()} />
                     <button type='button' onClick={()=>setLikes(prev=>prev+1)}>👍 {likes}</button>
                 </div>
