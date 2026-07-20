@@ -4,6 +4,9 @@ import profilePic from "../assets/image.jpeg";
 
 export default function Profile() {
 
+    function Resume() {
+
+    }
     return (
         <div className="page">
 
