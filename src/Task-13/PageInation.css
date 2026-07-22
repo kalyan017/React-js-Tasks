@@ -92,7 +92,6 @@ button[type="button"]:hover {
 }
 
 
-
 /* Pagination number buttons */
 .pagination-buttons button {
     flex-shrink: 0;      /* prevents button shrinking */
