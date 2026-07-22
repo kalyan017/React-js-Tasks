@@ -98,8 +98,6 @@ button[type="button"]:hover {
     flex-shrink: 0;      /* prevents button shrinking */
     min-width: 40px;
 }
-
-
 .pagination-buttons button:hover {
     background: #2563eb;
     color: white;
