@@ -91,7 +91,6 @@ button[type="button"]:hover {
     flex-wrap: nowrap;
 }
 
-
 /* Pagination number buttons */
 .pagination-buttons button {
     flex-shrink: 0;      /* prevents button shrinking */
