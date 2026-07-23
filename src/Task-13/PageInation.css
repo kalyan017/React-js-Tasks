@@ -84,7 +84,6 @@ button[type="button"]:hover {
     margin-top: 25px;
 }
 
-
 .pagination-buttons {
     display: flex;
     gap: 8px;
