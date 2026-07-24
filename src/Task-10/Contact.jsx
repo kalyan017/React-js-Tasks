@@ -7,7 +7,6 @@ export default function Contact() {
             <h1>Contact Me</h1>
 
             <form className="contact">
-
                 <input
                     type="text"
                     placeholder="Enter Name"
