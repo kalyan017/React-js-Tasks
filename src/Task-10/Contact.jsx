@@ -17,7 +17,6 @@ export default function Contact() {
                 <textarea
                     placeholder="Write your message"
                 ></textarea>
-
                 <button>Send Message</button>
 
             </form>
