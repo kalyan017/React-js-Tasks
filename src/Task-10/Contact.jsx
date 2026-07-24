@@ -12,7 +12,6 @@ export default function Contact() {
                     type="text"
                     placeholder="Enter Name"
                 />
-
                 <input
                     type="email"
                     placeholder="Enter Email"
