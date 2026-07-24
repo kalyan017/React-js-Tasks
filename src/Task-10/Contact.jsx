@@ -17,7 +17,6 @@ export default function Contact() {
                     type="email"
                     placeholder="Enter Email"
                 />
-
                 <textarea
                     placeholder="Write your message"
                 ></textarea>
