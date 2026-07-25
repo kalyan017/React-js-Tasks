@@ -43,8 +43,6 @@ tbody tr:hover {
     background-color: #eff6ff;
     transition: 0.3s ease;
 }
-
-
 /* Common Button Styling */
 button {
     border: none;
